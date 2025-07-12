@@ -32,7 +32,7 @@ def add_bg_from_local(image_file):
     st.markdown(page_bg, unsafe_allow_html=True)
 
 # Tambahkan background papan tulis
-add_bg_from_local("chalkboard.jpg")
+add_bg_from_local("image/papan.jpg")
 
 # Konfigurasi halaman
 st.set_page_config(page_title="Simulasi Antrian M/M/1", page_icon="📊", layout="centered")
