@@ -2,6 +2,9 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import base64
 
+# Konfigurasi halaman (HARUS PALING ATAS sebelum Streamlit lainnya)
+st.set_page_config(page_title="Simulasi Antrian M/M/1", page_icon="📊", layout="centered")
+
 # Fungsi untuk menambahkan background gambar lokal
 def add_bg_from_local(image_file):
     with open(image_file, "rb") as file:
@@ -33,9 +36,6 @@ def add_bg_from_local(image_file):
 
 # Tambahkan background papan tulis
 add_bg_from_local("image/papan.jpg")
-
-# Konfigurasi halaman
-st.set_page_config(page_title="Simulasi Antrian M/M/1", page_icon="📊", layout="centered")
 
 # Judul utama
 st.markdown("<h1 style='text-align: center;'>📊 Aplikasi Simulasi Antrian M/M/1</h1>", unsafe_allow_html=True)
